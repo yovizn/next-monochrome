@@ -19,6 +19,7 @@ body {
     background-color: theme(backgroundColor.background.DEFAULT);
     color: theme(colors.foreground.DEFAULT);
     scrollbar-width: none;
+    position: relative;
 }
 
 h1,

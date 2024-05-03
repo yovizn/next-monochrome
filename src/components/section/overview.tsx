@@ -56,7 +56,7 @@ export default function Overview() {
                 tl.to(card, {
                     scrollTrigger: {
                         trigger: target.current,
-                        start: "top bottom",
+                        start: "top top",
                         end: "bottom bottom",
                         scrub: true,
                     },
@@ -76,13 +76,22 @@ export default function Overview() {
                 id='wrp'
                 className='mx-auto flex h-[50vh] w-full max-w-screen-desktop items-center justify-center overflow-hidden px-4 py-40 tablet:h-screen'
             >
-                <h3
+                <div
                     id='parh'
-                    className='-translate-y-[200%] text-wrap text-center text-2xl uppercase tablet:text-7xl'
+                    className='flex -translate-y-[200%] flex-col items-center justify-center gap-y-10 tablet:text-center max-tablet:px-10 max-tablet:pt-20'
                 >
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
-                    suscipit!
-                </h3>
+                    <h3 className='text-balance text-2xl uppercase tablet:text-5xl'>
+                        Step into a world where imagination knows no bounds &ndash;
+                        welcome to Creative Website Maker.
+                    </h3>
+                    <p className='text-balance tablet:text-lg'>
+                        An artist seeking to showcase your portfolio, our team is here to
+                        craft bespoke websites tailored to your exact needs. Let your
+                        creativity soar as we embark on this exhilarating journey
+                        together, sculpting digital landscapes that captivate, inspire,
+                        and leave a lasting impression.
+                    </p>
+                </div>
             </div>
             <div className='sticky left-0 top-20 mx-auto flex h-screen w-full max-w-screen-desktop flex-col pt-4 tablet:pt-10'>
                 <div className='relative flex size-full flex-col overflow-hidden'>
@@ -101,11 +110,11 @@ export default function Overview() {
                                 }}
                             >
                                 <div className='flex size-full flex-col justify-between'>
-                                    <span className='flex gap-x-4 text-xl font-medium'>
+                                    <span className='flex gap-x-4 text-xl font-medium text-foreground-100'>
                                         <span className='block'>[0{idx + 1}]</span>
                                         <span className='block'>{item.label}</span>
                                     </span>
-                                    <p className='line-clamp-3 text-2xl font-bold uppercase text-foreground-100'>
+                                    <p className='font-light capitalize text-foreground-100'>
                                         {item.content}
                                     </p>
                                 </div>

@@ -17,10 +17,10 @@ export const navLinks: TLink[] = [
         name: "about us",
         url: "/about",
     },
-    {
-        name: "services",
-        url: "/services",
-    },
+    // {
+    //     name: "services",
+    //     url: "/services",
+    // },
     {
         name: "teams",
         url: "/teams",
@@ -31,31 +31,31 @@ export const overviewList: TOverviewList[] = [
     {
         label: "Frontend Dev",
         content:
-            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse molestias illo dolorum! Soluta quibusdam in maiores repudiandae magnam beatae debitis?",
+            "A frontend developer is responsible for building the user interface of a website or application using HTML, CSS, and JavaScript. They focus on creating visually appealing and interactive elements that users interact with directly.",
     },
     {
         label: "UI/UX Design",
         content:
-            "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, dolorum!",
+            "UI/UX design involves creating intuitive and visually pleasing interfaces for websites or applications. UI (User Interface) design focuses on the look and feel, while UX (User Experience) design ensures a smooth and enjoyable interaction for users. It involves understanding user behavior, wireframing, prototyping, and iterating designs based on user feedback to create a seamless experience.",
     },
     {
         label: "Web Design",
         content:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores corporis explicabo velit quidem temporibus blanditiis provident, repellendus ab quia in, perspiciatis reiciendis sequi dolorem cupiditate pariatur veritatis officiis optio magnam.",
+            "Apologies for the verbosity. Put succinctly, web design involves crafting the visual appearance and layout of websites to be both aesthetically pleasing and user-friendly.",
     },
     {
         label: "Interactive Media Developer",
         content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi placeat neque amet consequuntur illum possimus.",
+            "Interactive media developers craft engaging digital experiences using technologies like HTML5, CSS3, JavaScript, and frameworks such as React or Vue.js. They create dynamic content, including web applications, games, and multimedia presentations, designed to interactively engage users across various platforms and devices.",
     },
     {
-        label: "Interactive Media Developer",
+        label: "3D Design",
         content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi placeat neque amet consequuntur illum possimus.",
+            "3D design: Creating digital models and visualizations using specialized software for industries like animation, gaming, architecture, and product design.",
     },
     {
-        label: "Interactive Media Developer",
+        label: "Creative Developer",
         content:
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi placeat neque amet consequuntur illum possimus.",
+            "Creative developers merge technical expertise with creative software to craft innovative digital solutions like websites, applications, animations, and multimedia content.",
     },
 ]

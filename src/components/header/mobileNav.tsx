@@ -20,7 +20,7 @@ export default function MobileNav() {
                 <button
                     ref={menuRef}
                     onClick={handleMenu}
-                    className='flex items-center justify-center'
+                    className='flex items-center justify-center desktop:hidden'
                 >
                     <span className='relative z-[100] h-[24.5px] w-[54.5px] overflow-hidden text-xl uppercase text-foreground-100'>
                         <span id='menu' className='absolute inset-0 block translate-y-0'>

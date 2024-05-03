@@ -72,7 +72,7 @@ export default function MenuNav({ menuIsActive, setMenuIsActive }: MenuNavProp) 
             exit='exit'
             className='fixed inset-0 h-screen w-full -translate-y-full bg-background py-10 opacity-0'
         >
-            <ul className='flex size-full flex-col justify-end'>
+            <ul className='flex size-full flex-col justify-center'>
                 {navLinks.map((link, idx) => (
                     <motion.li
                         layout

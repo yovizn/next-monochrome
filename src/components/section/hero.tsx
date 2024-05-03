@@ -4,6 +4,7 @@ import Image from "next/image"
 import { useHomeTL } from "@/hooks/animation/use-home-timeline"
 
 import heroImage from "@public/images/Hero-1.jpg"
+import Brand from "../common/brand"
 
 export default function Hero() {
     const heading = "Monochrome®"
@@ -27,7 +28,7 @@ export default function Hero() {
                     className='object-cover object-[20%]'
                 />
             </div>
-            <div className='sticky top-20 flex flex-col items-center justify-center mix-blend-difference tablet:top-0'>
+            {/* <div className='sticky top-20 flex flex-col items-center justify-center mix-blend-difference tablet:top-0'>
                 <div className='h-[400px] w-full'>
                     <h1
                         role='heading'
@@ -52,7 +53,8 @@ export default function Hero() {
                         </span>
                     </h1>
                 </div>
-            </div>
+            </div> */}
+            <Brand targerHero={targerHero} />
 
             <p className='mx-auto mt-40 flex max-w-[320px] flex-wrap justify-center gap-x-1.5 overflow-hidden text-lg font-bold uppercase text-foreground-100 mix-blend-difference tablet:mt-4 tablet:text-2xl'>
                 <span className='sr-only'></span>

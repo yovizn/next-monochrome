@@ -24,25 +24,7 @@ export const useHomeTL = () => {
                     ease: "power4.inOut",
                 },
             })
-            gsap.to(char, {
-                top: 0,
-                duration: 2,
-                ease: "power4.inOut",
-                delay: 0.5,
-                stagger: {
-                    from: "center",
-                    amount: 0.55,
-                },
-                onComplete: () => {
-                    tl.to(char, {
-                        y,
-                        stagger: {
-                            from: "center",
-                            amount: 0.35,
-                        },
-                    })
-                },
-            })
+
             tl.to(img, {
                 scrollTrigger: {
                     trigger: targerHero.current,

@@ -16,7 +16,13 @@ type LenisWrapperProps = {
 export default function LenisWrapper({
     children,
     lenis = true,
-    lenisOptions = { lerp: 0.085, duration: 4, syncTouch: true, syncTouchLerp: 0.9 },
+    lenisOptions = {
+        lerp: 0.085,
+        duration: 4,
+        syncTouch: true,
+        syncTouchLerp: 0.9,
+        smoothWheel: true,
+    },
     className,
     ...props
 }: LenisWrapperProps) {

@@ -25,7 +25,7 @@ export default function Footer() {
                 className='mx-auto'
             >
                 <div className='flex size-full items-center justify-center bg-background-100 px-4 py-6'>
-                    <div className='flex size-full w-full max-w-screen-desktop items-center justify-between'>
+                    <div className='flex size-full w-full max-w-screen-desktop flex-col items-center justify-center tablet:flex-row tablet:justify-between'>
                         <Link
                             href='https://alphatango.com/'
                             target='_blank'
@@ -33,7 +33,7 @@ export default function Footer() {
                         >
                             <p className='capitalize'>
                                 Design system inspire by{" "}
-                                <span className=' font-bold uppercase text-foreground-100 transition-colors duration-300 ease-in-out group-hover:text-blue'>
+                                <span className='font-bold uppercase text-foreground-100 transition-colors duration-300 ease-in-out group-hover:text-blue'>
                                     Alphatango
                                 </span>
                             </p>
