@@ -3,31 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+    --background-200: 0 0 0;
+    --background-100: 0 0 4;
+    --border: 0 0 18;
+    --text-100: 0 0 100;
+    --text-200: 0 0 63;
+    --blue: 210 100 66;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+    font-size: 14px;
+    letter-spacing: theme(letterSpacing.tight);
 }
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    background-color: theme(backgroundColor.background.DEFAULT);
+    color: theme(colors.foreground.DEFAULT);
+    scrollbar-width: none;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: theme(fontSize.xl);
+    color: theme(colors.foreground.100);
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: theme(letterSpacing.tight);
+}
+
+.resText {
+    font-size: clamp(2rem, 12vw, 13.25rem);
 }

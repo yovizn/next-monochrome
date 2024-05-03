@@ -1,0 +1,19 @@
+.home {
+    height: 100%;
+    width: 100%;
+
+    .hero {
+        height: 100%;
+        width: 100%;
+    }
+
+    .overview {
+        height: 100%;
+        width: 100%;
+        background-image: radial-gradient(
+            125% 100% at 50% 0%,
+            theme(colors.background.100 / 0.7) 50%,
+            transparent
+        );
+    }
+}
